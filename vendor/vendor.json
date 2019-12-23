@@ -1,0 +1,80 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "Aulh7C5SVOA4Jzt5eHNH6197Mbk=",
+			"path": "github.com/konsorten/go-windows-terminal-sequences",
+			"revision": "f55edac94c9bbba5d6182a4be46d86a2c9b5b50e",
+			"revisionTime": "2019-02-26T22:47:05Z"
+		},
+		{
+			"checksumSHA1": "HfNEcSJhvpTA65aPUCtLmalUOEY=",
+			"path": "github.com/miekg/dns",
+			"revision": "450ab7d57fb96d2a1d85cc507d30a91d00185dd4",
+			"revisionTime": "2018-12-04T07:31:40Z"
+		},
+		{
+			"checksumSHA1": "SVO+Zm6SNwWrpgyc6mcTXbH4aJ8=",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "2a22dbedbad1fd454910cd1f44f210ef90c28464",
+			"revisionTime": "2019-05-18T13:52:02Z"
+		},
+		{
+			"checksumSHA1": "2LpxYGSf068307b7bhAuVjvzLLc=",
+			"origin": "github.com/miekg/dns/vendor/golang.org/x/crypto/ed25519",
+			"path": "golang.org/x/crypto/ed25519",
+			"revision": "450ab7d57fb96d2a1d85cc507d30a91d00185dd4",
+			"revisionTime": "2018-12-04T07:31:40Z"
+		},
+		{
+			"checksumSHA1": "0JTAFXPkankmWcZGQJGScLDiaN8=",
+			"origin": "github.com/miekg/dns/vendor/golang.org/x/crypto/ed25519/internal/edwards25519",
+			"path": "golang.org/x/crypto/ed25519/internal/edwards25519",
+			"revision": "450ab7d57fb96d2a1d85cc507d30a91d00185dd4",
+			"revisionTime": "2018-12-04T07:31:40Z"
+		},
+		{
+			"checksumSHA1": "NjyXtXsaf0ulRJn6HQSP1FqGL4A=",
+			"origin": "github.com/miekg/dns/vendor/golang.org/x/net/bpf",
+			"path": "golang.org/x/net/bpf",
+			"revision": "450ab7d57fb96d2a1d85cc507d30a91d00185dd4",
+			"revisionTime": "2018-12-04T07:31:40Z"
+		},
+		{
+			"checksumSHA1": "8oJoT8rfokzpkJ19eNhRs2JgRxI=",
+			"origin": "github.com/miekg/dns/vendor/golang.org/x/net/internal/iana",
+			"path": "golang.org/x/net/internal/iana",
+			"revision": "450ab7d57fb96d2a1d85cc507d30a91d00185dd4",
+			"revisionTime": "2018-12-04T07:31:40Z"
+		},
+		{
+			"checksumSHA1": "YsXlbexuTtUXHyhSv927ILOkf6A=",
+			"origin": "github.com/miekg/dns/vendor/golang.org/x/net/internal/socket",
+			"path": "golang.org/x/net/internal/socket",
+			"revision": "450ab7d57fb96d2a1d85cc507d30a91d00185dd4",
+			"revisionTime": "2018-12-04T07:31:40Z"
+		},
+		{
+			"checksumSHA1": "K4XNY0c60IPBpv5sO6aiCuB8o/0=",
+			"origin": "github.com/miekg/dns/vendor/golang.org/x/net/ipv4",
+			"path": "golang.org/x/net/ipv4",
+			"revision": "450ab7d57fb96d2a1d85cc507d30a91d00185dd4",
+			"revisionTime": "2018-12-04T07:31:40Z"
+		},
+		{
+			"checksumSHA1": "hDszlYGI8m9puPsEIDr59ccTiF8=",
+			"origin": "github.com/miekg/dns/vendor/golang.org/x/net/ipv6",
+			"path": "golang.org/x/net/ipv6",
+			"revision": "450ab7d57fb96d2a1d85cc507d30a91d00185dd4",
+			"revisionTime": "2018-12-04T07:31:40Z"
+		},
+		{
+			"checksumSHA1": "BkIqzT8ABSqi6exRE/ZRWOEiUlw=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "0a153f010e6963173baba2306531d173aa843137",
+			"revisionTime": "2019-09-21T19:27:54Z"
+		}
+	],
+	"rootPath": "github.com/nlimpid/demo"
+}
