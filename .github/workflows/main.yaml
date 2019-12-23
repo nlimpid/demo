@@ -32,5 +32,5 @@ jobs:
       - name: Build
         run: sh build.sh `git rev-parse HEAD`
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN}}
           GOPATH: /home/runner/work/demo/go/
