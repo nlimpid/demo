@@ -16,7 +16,8 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
         with:
-          path: /home/runner/go/src/github.com/nlimpid/demo
+          repository: go/src/github.com/nlimpid/demo
+          path: demo
 
       - name: Debug
         run: |
