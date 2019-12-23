@@ -17,19 +17,18 @@ jobs:
           path: go/src/github.com/nlimpid/demo
       - uses: actions/setup-go@v1
         with:
-          go-version: '1.13.1' # The Go version to download (if necessary) and use.
+          go-version: "1.13.1" # The Go version to download (if necessary) and use.
       # This step prints an output (time) from the previous step's action.
 
       - name: Debug
-      run: |
-        pwd
-        echo ${HOME}
-        echo ${GITHUB_WORKSPACE}
-        echo ${GOPATH}
-        echo ${GOROOT}
-      env:
-        GOPATH: /home/runner/work/nlimpid/go
-
+        run: |
+          pwd
+          echo ${HOME}
+          echo ${GITHUB_WORKSPACE}
+          echo ${GOPATH}
+          echo ${GOROOT}
+        env:
+          GOPATH: /home/runner/work/nlimpid/go
 
       - name: Build
         run: sh build.sh
