@@ -11,10 +11,10 @@ jobs:
     steps:
       # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
       - name: Hello world
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
         with:
           fetch-depth: 1
-          path: ${HOME}/go/src/github.com/nlimpid/demo
+          path: /work/demo/go/src/github.com/nlimpid/demo
       - uses: actions/setup-go@v1
         with:
           go-version: "1.13.1" # The Go version to download (if necessary) and use.
