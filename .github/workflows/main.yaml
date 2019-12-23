@@ -26,8 +26,10 @@ jobs:
           echo ${GOPATH}
           echo ${GOROOT}
           echo ${PWD}
-        # env:
-        #   GOPATH: /home/runner/work/nlimpid/go
+        env:
+          GOPATH: /home/runner/work/demo/go/
 
       - name: Build
         run: sh build.sh
+        env:
+          GOPATH: /home/runner/work/demo/go/
