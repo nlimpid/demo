@@ -30,6 +30,6 @@ jobs:
           GOPATH: /home/runner/work/demo/go/
 
       - name: Build
-        run: sh build.sh
+        run: sh build.sh `git rev-parse HEAD`
         env:
           GOPATH: /home/runner/work/demo/go/
