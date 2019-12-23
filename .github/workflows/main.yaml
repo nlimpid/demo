@@ -8,6 +8,9 @@ jobs:
     name: Greeting
     # This job runs on Linux
     runs-on: ubuntu-latest
+    env:
+      GOPATH: /home/runner/work/demo/go
+      GITHUB_TOKEN: ${{secrets.TOKEN}}
     steps:
       - uses: actions/setup-go@v1
         with:
@@ -26,17 +29,12 @@ jobs:
           echo ${GOPATH}
           echo ${GOROOT}
           echo ${PWD}
-        env:
-          GOPATH: /home/runner/work/demo/go/
 
-      - name: Push
+      - name: Docker Login
         run: |
           docker login docker.pkg.github.com --username nlimpid --password "${GITHUB_TOKEN}"
-        env:
-          GITHUB_TOKEN: ${{secrets.TOKEN}}
 
       - name: Build
         run: sh build.sh `git rev-parse HEAD`
         env:
           GITHUB_TOKEN: ${{secrets.TOKEN}}
-          GOPATH: /home/runner/work/demo/go/
