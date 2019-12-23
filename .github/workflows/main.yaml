@@ -29,8 +29,14 @@ jobs:
         env:
           GOPATH: /home/runner/work/demo/go/
 
+      - name: Push
+        run: |
+          docker login docker.pkg.github.com --username nlimpid --password "${GITHUB_TOKEN}"
+        env:
+          GITHUB_TOKEN: ${{secrets.TOKEN}}
+
       - name: Build
         run: sh build.sh `git rev-parse HEAD`
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN}}
+          GITHUB_TOKEN: ${{secrets.TOKEN}}
           GOPATH: /home/runner/work/demo/go/
