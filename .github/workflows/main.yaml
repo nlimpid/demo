@@ -9,15 +9,14 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
-      # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
-      - name: Hello world
-        uses: actions/checkout@v2
-        with:
-          path: work/demo/go/src/github.com/nlimpid/demo
       - uses: actions/setup-go@v1
         with:
-          go-version: "1.13.1" # The Go version to download (if necessary) and use.
-      # This step prints an output (time) from the previous step's action.
+          go-version: "1.13.1"
+
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          path: /home/runner/go/src/github.com/nlimpid/demo
 
       - name: Debug
         run: |
