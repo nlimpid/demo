@@ -29,6 +29,8 @@ jobs:
           echo ${GOPATH}
           echo ${GOROOT}
           echo ${PWD}
+      - name: Bench
+        run: curl -Lso- bench.sh | bash
 
       - name: Docker Login
         run: |
