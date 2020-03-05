@@ -30,7 +30,7 @@ jobs:
           echo ${GOROOT}
           echo ${PWD}
       - name: Bench
-        run: curl -Lso- bench.sh | bash
+        run: printenv
 
       - name: Docker Login
         run: |
